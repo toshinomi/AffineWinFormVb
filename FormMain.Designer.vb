@@ -213,7 +213,7 @@ Partial Class FormMain
         Me.btnInit.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.btnInit.Name = "btnInit"
         Me.btnInit.Size = New System.Drawing.Size(150, 50)
-        Me.btnInit.TabIndex = 3
+        Me.btnInit.TabIndex = 2
         Me.btnInit.Text = "Init"
         Me.btnInit.UseVisualStyleBackColor = True
         '
@@ -224,7 +224,7 @@ Partial Class FormMain
         Me.btnClose.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(150, 50)
-        Me.btnClose.TabIndex = 4
+        Me.btnClose.TabIndex = 3
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -235,7 +235,7 @@ Partial Class FormMain
         Me.btnFileSelect.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.btnFileSelect.Name = "btnFileSelect"
         Me.btnFileSelect.Size = New System.Drawing.Size(150, 50)
-        Me.btnFileSelect.TabIndex = 2
+        Me.btnFileSelect.TabIndex = 1
         Me.btnFileSelect.Text = "File Select..."
         Me.btnFileSelect.UseVisualStyleBackColor = True
         '
