@@ -9,8 +9,8 @@
 
         ' InitializeComponent() 呼び出しの後で初期化を追加します。
 
-        AddHandler lblTitle.MouseDown, AddressOf OnMouseDownFormMain
-        AddHandler lblTitle.MouseMove, AddressOf OnMouseMoveFormMain
+        AddHandler lblTitle.MouseDown, AddressOf OnMouseDownLblTitle
+        AddHandler lblTitle.MouseMove, AddressOf OnMouseMoveLblTitle
         AddHandler btnFileSelect.Click, AddressOf OnClickBtnFileSelect
         AddHandler btnClose.Click, AddressOf OnClickBtnClose
         AddHandler btnInit.Click, AddressOf OnClickBtnInit
@@ -19,13 +19,13 @@
         AddHandler textBoxSy.KeyPress, AddressOf OnKeyPressTextBoxSy
     End Sub
 
-    Private Sub OnMouseDownFormMain(sender As Object, e As MouseEventArgs)
+    Private Sub OnMouseDownLblTitle(sender As Object, e As MouseEventArgs)
         If ((e.Button And MouseButtons.Left) = MouseButtons.Left) Then
             m_mousePoint = New Point(e.X, e.Y)
         End If
     End Sub
 
-    Private Sub OnMouseMoveFormMain(sender As Object, e As MouseEventArgs)
+    Private Sub OnMouseMoveLblTitle(sender As Object, e As MouseEventArgs)
         If ((e.Button And MouseButtons.Left) = MouseButtons.Left) Then
             Me.Left += e.X - m_mousePoint.X
             Me.Top += e.Y - m_mousePoint.Y
